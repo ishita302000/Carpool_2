@@ -50,8 +50,8 @@ const FormSignup = () => {
   
 
   return (
-    <div className="form-content-right">
-      <form className="form" >
+    <div className="form-contents-right">
+      <form className="form_" >
         <h1>Create your account</h1>
         <div className="form-inputs">
            <label htmlFor="email" className="form-label">

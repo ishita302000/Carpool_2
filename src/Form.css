@@ -51,13 +51,13 @@
     color: #fff;
   }
   
-  .form-content-right {
+  .form-contents-right {
     border-radius: 0 10px 10px 0;
     position: relative;
     background: linear-gradient(90deg,  rgb(233, 169, 8) 100%, rgb(233, 169, 8) 100%);
   }
   
-  .form {
+  .form_ {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,7 +70,7 @@
     align-items: center;
   }
   
-  .form h1 {
+  .form_ h1 {
     font-size: 1rem;
     text-align: start;
     width: 80%;

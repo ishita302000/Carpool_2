@@ -10,6 +10,7 @@ import Bookride from './Bookride';
 import Offerride from './Offerride';
 import FinalList from './FinalList';
 import Form1 from './Form1';
+import OfferriderForm from './OfferriderForm';
 
 class App extends Component {
   render() {
@@ -36,10 +37,11 @@ class App extends Component {
                 <Route path='/SignForm' element={<SignForm />}/>
                 <Route path='/Login' element={<LoginForm />}/>
                 <Route path='/RiderOffer'  element={<RiderOffer/>}/>
-                <Route path='/' element={<Bookride />}/>
+                <Route path='/Bookride' element={<Bookride />}/>
                 <Route path='/Offerride' element={<Offerride />} />
                 <Route path='/FinalList' element={<FinalList />} />
                 <Route path='/Form1' element={<Form1 />} />
+                <Route path='/' element={< OfferriderForm/>}/>
             </Routes>
        </Router>
       

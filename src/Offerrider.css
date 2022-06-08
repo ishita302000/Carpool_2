@@ -1,16 +1,17 @@
-.ride-form
+.ride-forn
 {
      background-image: url("../public/background.png");
    /* background-color: aqua; */
      height:47rem;
      background-repeat: no-repeat;
      background-size: 1520px 850px;
-     float: left;
+    
 }
-.forn-container
+
+.forn-container-left
 {
       padding: 5rem;  
-      background-color: hsl(0, 6%, 97%);
+      background-color: hsl(0, 0%, 99%);
       padding-top: 2rem;
       padding-left: 1rem;
       margin-left: 10rem;
@@ -18,40 +19,45 @@
       margin-top: 4rem;
       float: left;
       width: 25rem;
+      border-radius: 1rem;
 }
-.form{
-    padding: 14rem;
-    background-color: rgb(245, 248, 247);
+.forn-container-right
+{
+      padding: 5rem;  
+      background-color: hsl(0, 0%, 99%);
+      padding-top: 2rem;
+      padding-left: 1rem;
+      margin-left: 10rem;
+      margin-right: 23rem;
+      margin-top: -31rem;
+      float: right;
+      width: 25rem;
+      border-radius: 1rem;
 }
+.next{
+    color: rgb(98, 7, 168);
+    font-weight: bolder;
+    padding-left: 19rem;
+}
+
 .button
 {
     background-color: rgb(243, 210, 27);
      color: rgb(255, 255, 255);
      border: none;
-     padding: 5%;
+     padding: 3%;
      display: inline-block;
      font-size: 1rem;
      border-radius: 20px;
      width: 8rem;
 }
-.ride-matches{
-    display: inline-block;
-    float: right;
-    margin-top: 2rem;
-    padding-right: 28rem;
-    margin-top: -32%;
-}
-.container-matche
+.label1
 {
-    background-color: hsl(0, 0%, 100%);
-    width: 20rem;
-    padding-top: 1rem;
-    padding: 1rem;
-    border-radius: 20px;
-
+    color: rgb(63, 60, 60);
+    font-weight:bolder;
 }
-.label
+.label2
 {
-    color: rgb(159, 14, 14);
+    color: rgb(6, 6, 6);
     font-weight:bolder;
 }
