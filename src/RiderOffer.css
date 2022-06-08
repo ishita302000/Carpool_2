@@ -1,0 +1,45 @@
+.dashboard
+{
+     background-image: url("../public/page.jpg");
+    background-repeat: no-repeat;
+     height: 47rem;
+     background-position: 100%;
+     background-size: cover;
+}
+.dashboard h1{
+     position: relative;
+     padding-left: 29%;
+     padding-top: 10%;
+     padding-bottom: 1%;
+   
+}
+/* .dashboard-body
+{
+     padding-left: 4%;
+     position: relative;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 47%;
+     padding-top: 1rem;
+} */
+.service-menu .service-btn{
+     background-color: rgb(133, 27, 195);
+     color: rgb(255, 255, 255);
+     border: none;
+     padding: 7%;
+     display: inline-block;
+     font-size: 1.8rem;
+     margin-right: 14px;
+     margin-left: 27rem;
+     border-radius: 20px;
+}
+.service-menu .service-btnn{
+     background-color: rgb(243, 210, 27);
+     color: rgb(255, 255, 255);
+     border: none;
+     padding: 7%;
+     display: inline-block;
+     font-size: 1.8rem;
+     border-radius: 20px;
+}
