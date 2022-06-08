@@ -39,6 +39,7 @@ const BookRiderForm = (props) => {
 			<div className="inputs">
 				<label>From</label>
 				<br />
+					
 				<input
 					type="text"
 					placeholder="Start Point"
@@ -47,6 +48,7 @@ const BookRiderForm = (props) => {
 					required
 				/>
 			</div>
+			<br/>
 			<div className="inputs">
 				<label>To</label>
 				<br />
@@ -58,6 +60,7 @@ const BookRiderForm = (props) => {
 					required
 				/>
 			</div>
+			<br/>
 			<div className="inputs">
 				<label>Date</label>
 				<br />
@@ -70,7 +73,7 @@ const BookRiderForm = (props) => {
 				/>
 				<br />
 			</div>
-
+			<br/>
 			<div className="time-selection">
 				<label>Time</label>
 				<select onChange={(e) => setTimeslot(e)}>
@@ -94,9 +97,9 @@ const BookRiderForm = (props) => {
 					})}
 				</select>
 			</div>
-
+			<br/>
 			<div>
-				<button
+				<button className='button'
 					type="button"
 					value="button"
 					onClick={ (e) => props.onSubmit(e) }

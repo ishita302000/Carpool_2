@@ -1,5 +1,57 @@
-ride-form
+.ride-form
 {
-   /* // background-image: url("../public/page.jpg");; */
-   background-color: aqua;
+     background-image: url("../public/background.png");
+   /* background-color: aqua; */
+     height:47rem;
+     background-repeat: no-repeat;
+     background-size: 1520px 850px;
+     float: left;
+}
+.forn-container
+{
+      padding: 5rem;  
+      background-color: hsl(0, 6%, 97%);
+      padding-top: 2rem;
+      padding-left: 1rem;
+      margin-left: 10rem;
+      margin-right: 60rem;
+      margin-top: 4rem;
+      float: left;
+      width: 25rem;
+}
+.form{
+    padding: 14rem;
+    background-color: rgb(245, 248, 247);
+}
+.button
+{
+    background-color: rgb(243, 210, 27);
+     color: rgb(255, 255, 255);
+     border: none;
+     padding: 5%;
+     display: inline-block;
+     font-size: 1rem;
+     border-radius: 20px;
+     width: 8rem;
+}
+.ride-matches{
+    display: inline-block;
+    float: right;
+    margin-top: 2rem;
+    padding-right: 28rem;
+    margin-top: -30%;
+}
+.container-matche
+{
+    background-color: hsl(0, 0%, 100%);
+    width: 20rem;
+    padding-top: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+.label
+{
+    color: rgb(159, 14, 14);
+    font-weight:bolder;
 }

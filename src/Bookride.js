@@ -30,15 +30,18 @@ import './Bookride.css';
 
          return(
              <div>
-                  <div className="ride-form">
-            <div className="form container">
-               
-                <form>
-                    <Bookrideform filled={findRides} fillDetails={(field,value) => fillDetails(field,value)} 
-                    onSubmit={(e) => {findRides(e)}} />
-                </form>
-            </div>
-            {
+                <div className="ride-form">
+                    <div className="forn-container">
+                        <form>
+                            <h1>Book a Ride</h1>
+                            <h3>we get you the matches asap!</h3>
+                            <br/>
+                            <br/>
+                            <Bookrideform filled={findRides} fillDetails={(field,value) => fillDetails(field,value)} 
+                            onSubmit={(e) => {findRides(e)}} />
+                        </form>
+                    </div>
+               {
                 showMatch ?
                     <div className="ride-matches">
                         <h2 style={{ color: 'purple' }}>Your Matches</h2>
@@ -49,7 +52,7 @@ import './Bookride.css';
                             );
                         })}
                     </div> :null  //null
-            }
+               }
              </div>
              </div>
          );
