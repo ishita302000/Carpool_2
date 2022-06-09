@@ -8,6 +8,10 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr;
   }
+  .logologin{
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
   
   .close-btn {
     position: absolute;

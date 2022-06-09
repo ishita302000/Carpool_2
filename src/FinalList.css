@@ -1,0 +1,80 @@
+.finallist
+{
+     background-image: url("../public/background.png");
+   /* background-color: aqua; */
+     height:47rem;
+     background-repeat: no-repeat;
+     background-size: 1520px 850px;
+}
+.logo{
+   margin-left: 6rem;
+   margin-top:1rem;
+}
+.buttonlist
+{
+    background-color: rgb(120, 40, 205);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: .5%;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: 11rem;
+}
+.buttonlist1
+{
+    
+    background-color: rgb(247, 221, 28);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: .5%;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: 10.5rem;
+    height: 2rem;
+}
+.list4{
+ list-style-type: none;   
+ font-weight: 550;
+ color: #000;
+}
+.list3{
+    list-style-type: none;   
+    font-weight: 550;
+    color: #000;
+   }
+.lists
+{
+    padding: 1rem;
+    background-color: #f1e9e9;
+    width: 20rem;
+    padding-top: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+.labellist{
+    color: rgb(101, 99, 99);
+    font: 1em sans-serif;
+    font-weight: bold;
+}
+.profile1{
+    margin-left: 82rem;
+    border-radius: 33%;
+    width: 6rem;
+    margin-top: -4rem;
+}
+
+.bookride-list
+{
+    padding: 6rem;
+    margin-top: -4%;
+}
+.offerride-list
+{
+    padding: 5rem;
+    float: right;
+
+    margin-right: 34rem;
+    margin-top: -43.2rem;
+}

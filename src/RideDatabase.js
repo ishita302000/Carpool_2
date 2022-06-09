@@ -1,7 +1,7 @@
 
 export const UserBookRide =[
     {
-        from:'meerut',
+        from:'Meerut',
         to:'Delhi',
         date:'xx/mm/yy',
         time:'5am-9am',

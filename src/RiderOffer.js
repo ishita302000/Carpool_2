@@ -27,6 +27,8 @@ const navigate = useNavigate();
   
     return(
           <div className="dashboard">
+            <img className="logo1" src="logo.png"/>
+            <img className="profile" src="profilephoto.jpg" />
               <h1>Hey Ishita !</h1>
               <div className="dashboard-body">
                     <main className="service-menu">

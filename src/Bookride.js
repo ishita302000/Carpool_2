@@ -30,6 +30,8 @@ import './Bookride.css';
 
          return(
              <div>
+                 <img className="logo4" src="logo.png"/>
+                 <img className="profile" src="profilephoto.jpg"/>
                 <div className="ride-form">
                     <div className="forn-container">
                         <form>

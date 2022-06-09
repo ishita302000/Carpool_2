@@ -27,18 +27,27 @@
      background-color: rgb(133, 27, 195);
      color: rgb(255, 255, 255);
      border: none;
-     padding: 7%;
+     padding: 6%;
      display: inline-block;
      font-size: 1.8rem;
      margin-right: 14px;
      margin-left: 27rem;
      border-radius: 20px;
 }
+.logo1{
+     margin-left: 2rem;
+     margin-top: .5rem;
+}
+.profile{
+     margin-left: 82rem;
+     border-radius: 33%;
+     width: 6rem
+}
 .service-menu .service-btnn{
      background-color: rgb(243, 210, 27);
      color: rgb(255, 255, 255);
      border: none;
-     padding: 7%;
+     padding: 6%;
      display: inline-block;
      font-size: 1.8rem;
      border-radius: 20px;

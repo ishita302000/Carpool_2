@@ -14,6 +14,7 @@ class Form1 extends Component
         <div className='form1-container'>
         <div className='form1-content-left'>
         <img className='form1-img' src='home.png' alt='spaceship' />
+        <img className="logologin" src="logo.png"/>
         </div>
            <Login/>
           

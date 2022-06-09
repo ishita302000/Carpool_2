@@ -82,6 +82,11 @@
     margin-bottom: 0.5rem;
     width: 80%;
   }
+  .signlogo
+  {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
   
   .form-inputs p {
     font-size: 0.8rem;

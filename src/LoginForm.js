@@ -4,6 +4,7 @@ import { InitialList, errors } from "./AccountList";
 import SignIn from "./SignForm";
 import {useHistory} from 'react-router-dom';
 import './Form1.css';
+import { NavLink } from "react-router-dom";
 import RiderOffer from './RiderOffer';
 
 class Login extends Component
@@ -67,6 +68,9 @@ class Login extends Component
              </div> 
               
                <button  className='form1-input-btn' type="submit" onClick={this.handleSubmit} >Log in</button> 
+               <span className='form-input-login'>
+         Doesn't have an account ? <NavLink exact activeClassName="active" to="/">SignIn</NavLink> 
+       </span>
             </form>
           </div>
         );

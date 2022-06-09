@@ -11,6 +11,8 @@ import Offerride from './Offerride';
 import FinalList from './FinalList';
 import Form1 from './Form1';
 import OfferriderForm from './OfferriderForm';
+import BookrideFinalList from './BookrideFinalList';
+import OrderFinalList from './OrderFinalList';
 
 class App extends Component {
   render() {
@@ -42,6 +44,8 @@ class App extends Component {
                 <Route path='/Form1' element={<Form1 />} />
                 <Route path='/OfferriderForm' element={< OfferriderForm/>}/>
                 <Route path='/FinalList' element={<FinalList/>}/>
+                <Route path='/BookrideFinalList' element={<BookrideFinalList/>}  />
+                <Route path='/OrderFinalList' element={<OrderFinalList/>}/>
             </Routes>
        </Router>
       

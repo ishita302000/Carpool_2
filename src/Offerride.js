@@ -8,6 +8,8 @@ function Offerride()
 {
      return(
         <div>
+           <img className="logoo" src="logo.png"/>
+           <img className="profile" src="profilephoto.jpg"/>
             <div className="ride-forn">
                 <div className="forn-container-left">
                    <OfferriderForm/>
