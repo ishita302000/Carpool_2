@@ -32,7 +32,7 @@ class App extends Component {
                      <Link to='/Form1'></Link> 
 
             <Routes>
-                <Route path='/Form' element={<Form />}/>
+                <Route path='/' element={<Form />}/>
                 <Route path='/SignForm' element={<SignForm />}/>
                 <Route path='/Login' element={<LoginForm />}/>
                 <Route path='/RiderOffer'  element={<RiderOffer/>}/>
@@ -40,7 +40,7 @@ class App extends Component {
                 <Route path='/Offerride' element={<Offerride />} />
                 <Route path='/FinalList' element={<FinalList />} />
                 <Route path='/Form1' element={<Form1 />} />
-                <Route path='/' element={< OfferriderForm/>}/>
+                <Route path='/OfferriderForm' element={< OfferriderForm/>}/>
                 <Route path='/FinalList' element={<FinalList/>}/>
             </Routes>
        </Router>
