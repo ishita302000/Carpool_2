@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import './RiderOffer.css';
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
  
 const RiderOffer =() =>{
-//const[check , Ischeck]= useState(0);
+  const[check , Ischeck]= useState(false);
 const navigate = useNavigate();
 
   function  handleSubmit1()
@@ -15,20 +15,19 @@ const navigate = useNavigate();
   function  handleSubmit2()
     {   
       navigate('/Offerride')
-        }
-    // if(check==1)
-    // {
-    //   return <Navigate to="/Bookride"/>
-    // }
-    // else if(check==2)
-    // {
-    //   return <Navigate to="/Bookride"/>
-    // }
-  
+    }
+  function click()
+    {
+        Ischeck(true);
+    }
+    function ride()
+    {
+      navigate('/FinalList')
+    }
     return(
           <div className="dashboard">
             <img className="logo1" src="logo.png"/>
-            <img className="profile" src="profilephoto.jpg" />
+            <img className="profile" src="profilephoto.jpg" onClick={() => click()} />
               <h1>Hey Ishita !</h1>
               <div className="dashboard-body">
                     <main className="service-menu">
@@ -36,6 +35,15 @@ const navigate = useNavigate();
                       <button className="service-btnn bg-orange" onClick={handleSubmit2}>Offer a ride</button>
                     </main>
               </div>
+              {
+                check ?
+                    <div className="Clickprofile">
+                        <ul className="pro">
+                          <li > <a href="/FinalList"></a>Rides</li>
+                          <li className="border">Sign Out</li>
+                        </ul>
+                    </div> :null  //null
+               }
           </div>
         );
 };

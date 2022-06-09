@@ -19,6 +19,19 @@
       float: left;
       width: 25rem;
 }
+.clickprofiles {
+    background-color: rgb(234, 234, 229);
+    color: rgb(85, 84, 84);
+    font-weight: bolder;
+    font-size: larger;
+    float: right;
+    margin-top: -33rem;
+    margin-right: 1rem;
+    width: 8rem;
+    padding-left: 1.6rem;
+    padding-top: 0.2rem;
+    height: 4rem;
+}
 .form{
     padding: 14rem;
     background-color: rgb(245, 248, 247);

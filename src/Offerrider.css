@@ -56,6 +56,19 @@
      border-radius: 20px;
      width: 8rem;
 }
+.clickprofilee {
+    background-color: rgb(234, 234, 229);
+    color: rgb(85, 84, 84);
+    font-weight: bolder;
+    font-size: larger;
+    float: right;
+    margin-top: -47rem;
+    margin-right: 1.5rem;
+    width: 8rem;
+    padding-left: 2rem;
+    padding-top: 0.2rem;
+    height: 4rem;
+}
 .label1
 {
     color: rgb(63, 60, 60);

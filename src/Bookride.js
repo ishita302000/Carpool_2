@@ -6,6 +6,7 @@ import './Bookride.css';
 
  function Bookride()
      {
+        const[check , Ischeck]= useState(false);
         const [showMatch, setShowMatch] = useState(false);
         const formParameters = { source: '',
         destination: '',
@@ -27,11 +28,15 @@ import './Bookride.css';
                  console.log("ride matched");
              }
         }
+        function click()
+        {
+        Ischeck(true);
+         }
 
          return(
              <div>
                  <img className="logo4" src="logo.png"/>
-                 <img className="profile" src="profilephoto.jpg"/>
+                 <img className="profile" src="profilephoto.jpg" onClick={() => click()}/>
                 <div className="ride-form">
                     <div className="forn-container">
                         <form>
@@ -54,6 +59,15 @@ import './Bookride.css';
                             );
                         })}
                     </div> :null  //null
+               }
+               {
+                   check ?
+                   <div className="clickprofiles">
+                       <ul className="pro">
+                         <li>My Rides</li>
+                         <li>Log Out</li>
+                       </ul>
+                   </div> :null  //null
                }
              </div>
              </div>

@@ -41,8 +41,32 @@
 .profile{
      margin-left: 82rem;
      border-radius: 33%;
+  
      width: 6rem
 }
+.Clickprofile{
+     background-color: rgb(234, 234, 229);
+     color: rgb(85, 84, 84);
+     font-weight: bolder;
+     font-size: larger;
+     float: right;
+     margin-top: -27rem;
+     margin-right: 1.5rem;
+     width: 8rem;
+     padding-left: 2rem;
+     padding-top: .2rem;
+     height: 4rem;
+ }
+
+.pro{
+     list-style-type: none;
+    
+}
+/* .border
+{
+     border-top: 3px solid grey;
+     width: 2rem;
+} */
 .service-menu .service-btnn{
      background-color: rgb(243, 210, 27);
      color: rgb(255, 255, 255);
