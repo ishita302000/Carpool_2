@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Navigate, Redirect } from "react-router-dom";
-import { InitialList, errors } from "./AccountList";
-import SignIn from "./SignForm";
+import { InitialList, errors } from "../Database/AccountList";
+import SignIn from "../Sign_In/SignForm";
 import {useHistory} from 'react-router-dom';
-import './Form1.css';
+import './LogIn.css';
 import { NavLink } from "react-router-dom";
-import RiderOffer from './RiderOffer';
+import RiderOffer from '../DashBoard/RiderOffer';
 
 class Login extends Component
 {

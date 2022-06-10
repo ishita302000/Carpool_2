@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './FinalList.css';
-import BookrideFinalList from './BookrideFinalList';
-import OrderFinalList from './OrderFinalList';
+import BookrideFinalList from '../All_Rides/BookrideFinalList';
+import OrderFinalList from '../All_Rides/OrderFinalList';
 
 import {useNavigate} from 'react-router-dom';
 

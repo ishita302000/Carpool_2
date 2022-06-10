@@ -2,17 +2,17 @@
 import './App.css';
 import React , {Component} from 'react';
 import {BrowserRouter as Router , Route , Routes ,Link} from 'react-router-dom';
-import Form from './Form';
-import SignForm from './SignForm';
-import LoginForm from './LoginForm';
-import RiderOffer from './RiderOffer';
-import Bookride from './Bookride';
-import Offerride from './Offerride';
-import FinalList from './FinalList';
-import Form1 from './Form1';
-import OfferriderForm from './OfferriderForm';
-import BookrideFinalList from './BookrideFinalList';
-import OrderFinalList from './OrderFinalList';
+import Form from '../Sign_In/SignIn';
+import SignForm from '../Sign_In/SignForm';
+import LoginForm from '../Log_In/LoginForm';
+import RiderOffer from '../DashBoard/RiderOffer';
+import Bookride from '../Book_Rides/Bookride';
+import Offerride from '../Offer_Rides/Offerride';
+import FinalList from '../All_Rides/FinalList';
+import Form1 from '../Log_In/LogIn';
+import OfferriderForm from '../Offer_Rides/OfferriderForm1';
+import BookrideFinalList from '../All_Rides/BookrideFinalList';
+import OrderFinalList from '../All_Rides/OrderFinalList';
 
 class App extends Component {
   render() {

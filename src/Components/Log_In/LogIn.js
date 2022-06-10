@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import Bookride from "./Bookride";
-
-import './Form2.css';
+import Login  from "./LoginForm";
+import '../Log_In/LogIn.css';
 
 
 
@@ -13,12 +12,10 @@ class Form1 extends Component
      
         <div className='form1-container'>
         <div className='form1-content-left'>
-            <Bookride/>
+        <img className='form1-img' src='home.png' alt='spaceship' />
+        <img className="logologin" src="logo.png"/>
         </div>
-        <div>
-            
-        </div>
-          
+           <Login/>
           
         </div>
      );

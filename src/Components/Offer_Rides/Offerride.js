@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 import { useNavigate } from "react-router-dom";
-import OfferriderForm from "./OfferriderForm";
+import OfferriderForm from "./OfferriderForm1";
 import OfferriderForm2 from "./OfferriderForm2";
 import './Offerrider.css';
 import React from "react";

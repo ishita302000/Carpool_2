@@ -77,7 +77,7 @@ function OfferriderForm()
 			<br/>
             <br/>
 			<div className="inputs">
-				<label className="next">Next>></label>
+				<label className="next">Next</label>
 				<br />
 				
 				<br />

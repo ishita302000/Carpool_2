@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Bookrideform from './BookRiderForm';
-import RideTile from "./RideTile";
-import {UserBookRide}  from './RideDatabase';
+import RideTile from "../Book_Rides/RideTile";
+import {UserBookRide}  from '../Database/RideDatabase';
 import './Bookride.css';
 import React from "react";
 import { useNavigate  } from "react-router-dom";

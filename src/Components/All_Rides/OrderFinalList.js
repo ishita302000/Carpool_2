@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import {UserBookRide}  from './RideDatabase';
+import {UserBookRide}  from '../Database/RideDatabase';
 
-class BookrideFinalList extends Component{
+class OrderFinalList extends Component{
     
     state={
         UserBookRide : [
         {
-            from:'Mumbai',
-            to:'Hyderabad',
+            from:'Chicago',
+            to:'Cincinatti',
             date:'xx/mm/yy',
-            time:'6pm-9pm',
-            price:'180$',
+            time:'5am-9am',
+            price:'95$',
             seats:'02'
         }]
     };
@@ -19,19 +19,19 @@ class BookrideFinalList extends Component{
    
   render(){
       return(
-          <div className="left">
-              <div >
-                <button className="buttonlist">Booked rides</button>
+          <div className="right">
+              <div>
+                <button className="buttonlist1" >Offered rides</button>
                 </div>
                 <div className="lists">
-                    <h1>Ishita Goel</h1>
+                    <h1>Jeffrey Roman</h1>
                     <br/>
                     <div>
                     <label className="labellist">From</label><br/>
                     {/* {listitem}
                     {UserBookRide.from} */}
                     <React.Fragment>
-                        <ul className="list4">
+                        <ul className="list3">
                         {
                             this.state.UserBookRide.map( 
                                 listitem => (
@@ -49,7 +49,7 @@ class BookrideFinalList extends Component{
                     <label className="labellist">To</label><br/>
                    {/* // {UserBookRide.to} */}
                    <React.Fragment>
-                        <ul className="list4">
+                        <ul className="list3">
                         {
                             this.state.UserBookRide.map( 
                                 listitem => (
@@ -67,7 +67,7 @@ class BookrideFinalList extends Component{
                     <label className="labellist">Date</label><br/>
                     {/* {UserBookRide.date} */}
                     <React.Fragment>
-                        <ul className="list4">
+                        <ul className="list3">
                         {
                             this.state.UserBookRide.map( 
                                 listitem => (
@@ -85,7 +85,7 @@ class BookrideFinalList extends Component{
                     <label className="labellist">Time</label><br/>
                     {/* {UserBookRide.time} */}
                     <React.Fragment>
-                        <ul className="list4">
+                        <ul className="list3">
                         {
                             this.state.UserBookRide.map( 
                                 listitem => (
@@ -103,7 +103,7 @@ class BookrideFinalList extends Component{
                     <label className="labellist">Price</label><br/>
                     {/* {UserBookRide.price} */}
                     <React.Fragment>
-                        <ul className="list4">
+                        <ul className="list3">
                         {
                             this.state.UserBookRide.map( 
                                 listitem => (
@@ -120,7 +120,7 @@ class BookrideFinalList extends Component{
                     <div>
                     <label className="labellist">Seats</label><br/>
                     <React.Fragment>
-                        <ul className="list4">
+                        <ul className="list3">
                         {
                             this.state.UserBookRide.map( 
                                 listitem => (
@@ -138,4 +138,4 @@ class BookrideFinalList extends Component{
       );
 }
 }
-export default BookrideFinalList;
+export default OrderFinalList;
