@@ -6,7 +6,6 @@ import './Bookride.css';
 import React from "react";
 import { useNavigate  } from "react-router-dom";
 
-
  function Bookride()
      {
         const navigate = useNavigate();

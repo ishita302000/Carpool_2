@@ -93,6 +93,11 @@
     margin-top: 0.5rem;
     color: #f00e0e;
   }
+  .error
+  {
+    font-weight: bold;
+    color: rgb(222, 17, 17);
+  }
   
   .form-label {
     display: inline-block;

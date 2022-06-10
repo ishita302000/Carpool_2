@@ -1,6 +1,5 @@
 import {React } from 'react'
 import { useState } from 'react';
-import Form1 from './Form1';
 import './Form.css';
 import { Navigate, NavLink } from 'react-router-dom';
 
@@ -20,6 +19,7 @@ const FormSignup = () => {
   const[email_ , setemail] = useState('');
   const[password_ , setpassword] = useState('');
   const[isAuth , setIsAuth] = useState(true);
+  const[errormessage , Seterrormessage] = useState('');
   
 
   function handleChange(event)
@@ -33,21 +33,22 @@ const FormSignup = () => {
      
   }
   function handleAdd()
-  {       
-    if(email_!="" & password_!="" )
-    {
-          const newList = list.concat({ email:email_  , password : password_  }); 
-          setList(newList);
-          setIsAuth(false);
-          }
-      
+  {    
+       if((email_=="" || password_=="") || (email_==" " || password_==" "))
+        {
+             Seterrormessage("Field Required !");
+        }
+        else if(email_!="" & password_!="" )
+        {
+              const newList = list.concat({ email:email_  , password : password_  }); 
+              setList(newList);
+              setIsAuth(false);
+        }
   }
   if(!isAuth)
   {
     return <Navigate to='/RiderOffer' />
   }
-
-  
 
   return (
     <div className="form-contents-right">
@@ -59,6 +60,8 @@ const FormSignup = () => {
            </label>
            <input  id="Email "type="email" name="email" className="form-input" placeholder='Enter your email' value={email_}
            onChange={handleChange}  required />
+           {errormessage && <div className="error"> {errormessage} </div>}
+
         </div>     
 
         <div className="form-inputs">
@@ -66,9 +69,12 @@ const FormSignup = () => {
              Password
            </label>
            <input id="password" type="password" name="password" className="form-input" placeholder='Enter your password' value1={password_}
-           onChange={handleChange_} required />         
+           onChange={handleChange_} required />  
+          {errormessage && <div className="error"> {errormessage} </div>}
+       
         </div> 
        <button className='form-input-btn' type='button' onClick={handleAdd}> Sign up</button> 
+
        <span className='form-input-login'>
          Already have an account ? <NavLink exact activeClassName="active" to="/Form1">LogIn</NavLink> 
        </span>

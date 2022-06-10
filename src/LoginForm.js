@@ -16,7 +16,8 @@ class Login extends Component
         this.state = {
           email: "",   //" "
           password: "",
-          redirect: false
+          redirect: false,
+          errormessage:"",
         };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -39,8 +40,13 @@ class Login extends Component
         if(userData.email != "")
         {
           this.setState({redirect: true});
+        
        //   this.props.history.push('/RiderOffer');
       //    this.props.history.push({ pathname:'/RiderOffer' })    
+        }
+        else if((userData.email=="" & userData.password=="") || (userData.email==" " && userData ==" "))
+        {
+          this.setState({errormessage:"Field Required!"})
         }
       }
       render() {
@@ -57,6 +63,7 @@ class Login extends Component
                <input  type="email" name="email" className="form1-input" placeholder='Enter your email' value={this.state.email}
                onChange={this.handleInputChange} 
                />
+                {this.state.errormessage && <div className="error"> { this.state.errormessage} </div>}
             </div>   
 
               <div className="form1-inputs">
@@ -64,7 +71,8 @@ class Login extends Component
                   Password
                </label>
                <input id="password" type="password" name="password" className="form1-input" placeholder='Enter your password' value={this.state.password}
-                onChange={this.handleInputChange} />         
+                onChange={this.handleInputChange} />  
+               {this.state.errormessage && <div className="error"> {this.state.errormessage} </div>}
              </div> 
               
                <button  className='form1-input-btn' type="submit" onClick={this.handleSubmit} >Log in</button> 
