@@ -37,7 +37,7 @@ class App extends Component {
                 <Route path='/Form' element={<Form />}/>
                 <Route path='/SignForm' element={<SignForm />}/>
                 <Route path='/Login' element={<LoginForm />}/>
-                <Route path='/RiderOffer'  element={<RiderOffer/>}/>
+                <Route path='/'  element={<RiderOffer/>}/>
                 <Route path='/Bookride' element={<Bookride />}/>
                 <Route path='/Offerride' element={<Offerride />} />
                 <Route path='/Form1' element={<Form1 />} />

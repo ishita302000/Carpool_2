@@ -3,9 +3,13 @@ import Bookrideform from './BookRiderForm';
 import RideTile from "./RideTile";
 import {UserBookRide}  from './RideDatabase';
 import './Bookride.css';
+import React from "react";
+import { useNavigate  } from "react-router-dom";
+
 
  function Bookride()
      {
+        const navigate = useNavigate();
         const[check , Ischeck]= useState(false);
         const [showMatch, setShowMatch] = useState(false);
         const formParameters = { source: '',
@@ -31,6 +35,14 @@ import './Bookride.css';
         function click()
         {
         Ischeck(true);
+         }
+         function ride()
+         {    
+           navigate('/FinalList')
+         }
+         function SignOut()
+         {
+           navigate('/Form1')
          }
 
          return(
@@ -61,13 +73,12 @@ import './Bookride.css';
                     </div> :null  //null
                }
                {
-                   check ?
-                   <div className="clickprofiles">
-                       <ul className="pro">
-                         <li>My Rides</li>
-                         <li>Log Out</li>
-                       </ul>
-                   </div> :null  //null
+                 check ? (
+                    <React.Fragment >
+                            <button onClick={ride} className="ride-button">Rides</button>
+                            <button onClick={SignOut} className="ride-buttonn">Sign Out</button>
+                            </React.Fragment>
+                    ) :null  //null
                }
              </div>
              </div>

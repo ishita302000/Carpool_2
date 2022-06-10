@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import './RiderOffer.css';
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
  
 const RiderOffer =() =>{
@@ -22,7 +22,12 @@ const navigate = useNavigate();
     }
     function ride()
     {
+      console.log("Hllo")
       navigate('/FinalList')
+    }
+    function SignOut()
+    {
+      navigate('/Form1')
     }
     return(
           <div className="dashboard">
@@ -33,16 +38,16 @@ const navigate = useNavigate();
                     <main className="service-menu">
                       <button className="service-btn bg-purple" onClick={handleSubmit1}>Book a ride</button>
                       <button className="service-btnn bg-orange" onClick={handleSubmit2}>Offer a ride</button>
+                     
                     </main>
               </div>
               {
-                check ?
-                    <div className="Clickprofile">
-                        <ul className="pro">
-                          <li > <a href="/FinalList"></a>Rides</li>
-                          <li className="border">Sign Out</li>
-                        </ul>
-                    </div> :null  //null
+                check ? (
+                  <React.Fragment >
+                          <button onClick={ride} className="ride-button">Rides</button>
+                          <button onClick={SignOut} className="ride-buttonn">Sign Out</button>
+                          </React.Fragment>
+                  ) :null  //null
                }
           </div>
         );

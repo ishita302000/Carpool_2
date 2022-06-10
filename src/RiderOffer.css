@@ -69,10 +69,36 @@
 } */
 .service-menu .service-btnn{
      background-color: rgb(243, 210, 27);
-     color: rgb(255, 255, 255);
+     color: rgb(225, 225, 225);
      border: none;
      padding: 6%;
      display: inline-block;
      font-size: 1.8rem;
      border-radius: 20px;
 }
+
+.ride-button {
+     /* display: block;
+     float: right;
+     /* margin-top: -26rem;
+     margin-right: 1rem;
+     font-size: larger;
+     width: 7rem; */
+     display: block;
+    float: right;
+    background-color: aliceblue;
+   
+    margin-right: 1rem;
+    width: 7rem;
+    font-size: larger;
+   
+}
+.ride-buttonn{
+     float: right;
+    margin-top: 2rem;
+     margin-right: -6.9rem;
+     font-size: larger;
+     width: 7rem;
+     background-color: aliceblue;
+}
+

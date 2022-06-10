@@ -1,17 +1,28 @@
 import { useState } from "react"; 
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import OfferriderForm from "./OfferriderForm";
 import OfferriderForm2 from "./OfferriderForm2";
 import './Offerrider.css';
-import { click } from "@testing-library/user-event/dist/click";
-
+import React from "react";
 function Offerride()
 {   
    const[check , Ischeck]= useState(false);
+   const navigate = useNavigate();
+
    function click()
    {
        Ischeck(true);
    }
+   function ride()
+   {
+     console.log("Hllo")
+     navigate('/FinalList')
+   }
+   function SignOut()
+   {
+     navigate('/Form1')
+   }
+
      return(
         <div>
            <img className="logoo" src="logo.png"/> 
@@ -25,13 +36,12 @@ function Offerride()
                 </div>
             </div>
             {
-                   check ?
-                   <div className="clickprofilee">
-                       <ul className="pro">
-                         <li>Rides</li>
-                         <li>Sign Out</li>
-                       </ul>
-                   </div> :null  //null
+                   check ? (
+                    <React.Fragment >
+                            <button onClick={ride} className="ride-button">Rides</button>
+                            <button onClick={SignOut} className="ride-buttonn">Sign Out</button>
+                            </React.Fragment>
+                    ) :null  //null
                }
          </div>
      );

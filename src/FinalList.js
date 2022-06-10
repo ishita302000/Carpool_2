@@ -3,13 +3,26 @@ import './FinalList.css';
 import BookrideFinalList from './BookrideFinalList';
 import OrderFinalList from './OrderFinalList';
 
+import {useNavigate} from 'react-router-dom';
+
+
 function FinalList()
 {
   const[check ,Ischeck]=useState(false);
+  const navigate = useNavigate();
   function click()
   {
     Ischeck(true);
   }
+  function ride()
+    {
+      console.log("Hllo")
+      navigate('/FinalList')
+    }
+    function SignOut()
+    {
+      navigate('/Form1')
+    }
   return(
     <div>
      
@@ -25,14 +38,12 @@ function FinalList()
             <OrderFinalList/>
           </div>
       </div>
-      {
-                   check ?
-                   <div className="clickprofile">
-                       <ul className="pro">
-                         <li>Rides</li>
-                         <li>Sign Out</li>
-                       </ul>
-                   </div> :null  //null
+      {check ? (
+                  <React.Fragment >
+                          <button onClick={ride} className="ride-button">Rides</button>
+                          <button onClick={SignOut} className="ride-buttonn">Sign Out</button>
+                          </React.Fragment>
+                  ) :null  //null
                }
       </div>
   );
