@@ -1,6 +1,6 @@
 .dashboard
 {
-     background-image: url("E:\carpool\public\page.jpg");
+     background-image: url("/public/page.jpg");
     background-repeat: no-repeat;
      height: 47rem;
      background-position: 100%;
