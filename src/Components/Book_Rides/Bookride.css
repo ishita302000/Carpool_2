@@ -1,7 +1,7 @@
 .ride-form
 {
-     background-image: url("E:\carpool\public\background.png");
-   /* background-color: aqua; */
+     background-image: url("/public/background.png");
+   
      height:47rem;
      background-repeat: no-repeat;
      background-size: 1520px 850px;

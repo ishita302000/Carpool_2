@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import Login  from "./LoginForm";
 import '../Log_In/LogIn.css';
 
-
-
 class Form1 extends Component
 {
     render()
