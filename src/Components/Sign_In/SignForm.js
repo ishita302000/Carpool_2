@@ -22,7 +22,7 @@ const FormSignup = () => {
   const[errormessage , Seterrormessage] = useState('');
   
 
-  function handleChange(event)
+  function handleChange(event) // can directly do at onChange no need method if it is single step
   {
       setemail(event.target.value);
      
@@ -45,7 +45,7 @@ const FormSignup = () => {
               setIsAuth(false);
         }
   }
-  if(!isAuth)
+  if(!isAuth)// what is this??
   {
     return <Navigate to='/RiderOffer' />
   }
@@ -84,3 +84,6 @@ const FormSignup = () => {
 };
 
 export default FormSignup;
+
+
+//InClude one more field for reenter password and validate for sign up
