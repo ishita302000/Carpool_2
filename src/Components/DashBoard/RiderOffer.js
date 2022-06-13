@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import './RiderOffer.css';
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
  
 const RiderOffer =() =>{
@@ -16,13 +16,13 @@ const navigate = useNavigate();
     {   
       navigate('/Offerride')
     }
-  function click()
+  function click() //naming
     {
         Ischeck(true);
     }
     function ride()
     {
-      console.log("Hllo")
+      console.log("Hllo")// remove all conolves
       navigate('/FinalList')
     }
     function SignOut()
@@ -32,7 +32,7 @@ const navigate = useNavigate();
     return(
           <div className="dashboard">
             <img className="logo1" src="logo.png"/>
-            <img className="profile" src="profilephoto.jpg" onClick={() => click()} />
+            <img className="profile" src="profilephoto.jpg" onClick={Ischeck(true)} />
               <h1>Hey Ishita !</h1>
               <div className="dashboard-body">
                     <main className="service-menu">

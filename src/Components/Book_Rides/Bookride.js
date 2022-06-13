@@ -22,8 +22,7 @@ import { useNavigate  } from "react-router-dom";
         const findRides = (event) =>
         {
             event.preventDefault();
-             // check available or not  if avaiable return list if not print no match found 
-
+            //===
              let ride= UserBookRide.find( user=> (user.from === formParameters.source && user.to === formParameters.destination ))
              if(ride)
              {

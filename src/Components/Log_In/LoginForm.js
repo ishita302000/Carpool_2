@@ -19,12 +19,12 @@ class Login extends Component
           redirect: false,
           errormessage:"",
         };
-        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);// why learn 
         this.handleSubmit = this.handleSubmit.bind(this);
       
     }
       handleInputChange(event) {
-        event.preventDefault();
+        event.preventDefault(); //why
         const target = event.target;
         this.setState({
           [target.name]: target.value,
@@ -32,7 +32,7 @@ class Login extends Component
       }
 
       handleSubmit(event) {
-        event.preventDefault();
+        event.preventDefault(); // Why
 
      //   var {uemail , pass } = document.forms[0];
         let userData = InitialList.find(user => user.email == this.state.email & user.password == this.state.password );
@@ -44,7 +44,7 @@ class Login extends Component
        //   this.props.history.push('/RiderOffer');
       //    this.props.history.push({ pathname:'/RiderOffer' })    
         }
-        else if((userData.email=="" & userData.password=="") || (userData.email==" " && userData ==" "))
+        else if((userData.email=="" && userData.password=="") || (userData.email==" " && userData ==" "))
         {
           this.setState({errormessage:"Field Required!"})
         }

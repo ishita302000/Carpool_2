@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 
 const BookRiderForm = (props) => {
 	let timings = [
@@ -51,7 +50,7 @@ const BookRiderForm = (props) => {
 			<br/>
 			<div className="inputs">
 				<label>To</label>
-				<br />
+				<br />{/*don't use*/}
 				<input
 					type="text"
 					placeholder="End Point"
